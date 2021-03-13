@@ -1,0 +1,6 @@
+/engine/
+/database/_cache/*
+/uploads/_cache/*
+engine
+*.pid
+*.log
