@@ -11,6 +11,10 @@
    table {
      height: 90vh;
    }
+   svg path {
+     fill: #eeeeee!important;
+     stroke: #25aed8!important;
+   }
   </style>
 </head>
 <body bgcolor="#000" style="background:url(/tpl/assets/img/abstractgradient.png)">
@@ -19,7 +23,9 @@
  <table align="center">
    <tr>
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-<td><img src="/tpl/assets/img/yops.svg" /></td>   
+<td>
+<wb-include wb-src="/tpl/assets/img/svg/logo.svg" alt="Логотип" height="60" width="300"/>  
+</td>   
    
    </tr>
 
