@@ -6,7 +6,7 @@ $(function(){
   ////////// NAVBAR //////////
 
   // Initialize PerfectScrollbar of navbar menu for mobile only
-  if(window.matchMedia('(max-width: 991px)').matches) {
+  if (window.matchMedia('(max-width: 991px)').matches && $('#navbarMenu').length) {
     const psNavbar = new PerfectScrollbar('#navbarMenu', {
       suppressScrollX: true
     });

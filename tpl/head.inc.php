@@ -13,11 +13,16 @@
 
     <title>{{header}}</title>
 
-    <!-- vendor css -->
-    <link href="{{_var.assets}}/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
-    <link rel="stylesheet" href="{{_var.assets}}/css/dashforge.css">
-    <link rel="stylesheet" href="{{_var.assets}}/css/dashforge.auth.css">
+
+    <link rel="preload" href="{{_var.assets}}/css/dashforge.css" as="style">
+    <link rel="preload" href="{{_var.assets}}/css/dashforge.auth.css" as="style">
+    <link rel="preload" href="{{_var.assets}}/css/blocks/forms.less" as="style">
+
+    <link rel="preload" href="{{_var.assets}}/lib/perfect-scrollbar/perfect-scrollbar.min.js" as="script">
+    <link rel="preload" href="{{_var.assets}}/lib/js-cookie/js.cookie.js" as="script">
+    <link rel="preload" href="{{_var.assets}}/js/dashforge.js" as="script">
+
   </head>
   <wb-include wb-tpl="_loader.inc.php" />

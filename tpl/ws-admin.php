@@ -12,10 +12,8 @@
             <div class="aside-header">
                 <a href="#" class="aside-logo"
                     data-ajax="{'url':'/cms/ajax/form/_settings/start','html':'.content-body'}" auto>
-                    <wb-include wb-src="/tpl/assets/img/svg/logo.svg" alt="Логотип" height="30" width="30" />
-                    АКП АЗС
+                    <wb-include wb-src="/tpl/assets/img/svg/logo.svg" alt="Логотип" height="30" width="100" />
                 </a>
-
                 <svg class="icon logo-menu aside-menu-link">
                     <use xlink:href="/tpl/assets/img/svg/sprite.svg#menu"></use>
                 </svg>

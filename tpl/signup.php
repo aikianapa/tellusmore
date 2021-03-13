@@ -14,7 +14,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center">
-                        <h1 class="display-4">Регистрация</h1>
+                        <h1 class="display-5">Регистрация</h1>
                         <p class="lead tx-14">Ваш аккаунт будет активирован после проверки данных</p>
                     </div>
                 </div>

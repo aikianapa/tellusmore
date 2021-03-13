@@ -1,4 +1,8 @@
 @import url("/engine/css/modals.less");
+.form-control:focus,
+.custom-select:focus {
+  box-shadow: none;
+}
 body {
   overflow: hidden;
   font-family: 'Roboto';
@@ -6,10 +10,6 @@ body {
 }
 body svg.mi [stroke] {
   stroke: #92929D;
-}
-body .form-control:focus,
-body .custom-select:focus {
-  box-shadow: none;
 }
 body .rounded {
   border-radius: 0.25rem;

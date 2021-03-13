@@ -6,10 +6,10 @@
 </div>
 
 <div class="form-group row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 mb-3">
         <input type="text" class="form-control" placeholder="ИНН" name="inn">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 mb-3">
         <input type="text" class="form-control" placeholder="КПП" name="kpp">
     </div>
     <div class="col-sm-4">
