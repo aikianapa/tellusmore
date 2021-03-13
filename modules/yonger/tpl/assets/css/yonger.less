@@ -1,0 +1,145 @@
+@import url("/engine/css/modals.less");
+@icon_size: 21px;
+@round: 0.25rem;
+@color-menu: #171725;
+@color-hover: #0062FF;
+@color-logo: #273244; 
+@color-gray: #E2E2EA;
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+    svg.mi [stroke] {
+        stroke: #92929D;
+    }
+
+    .rounded {
+        border-radius: @round;
+    }
+
+    .content {
+        overflow: hidden;
+    }
+
+    .content-header {
+        .mi {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn-dashed {
+            border: 1px dashed #F1F1F5;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        color:@color-menu;
+        font: normal normal medium 14px/23px Poppins;
+        letter-spacing: 0.2px;
+        .nav-link:hover {
+            color: @color-hover;
+            svg [stroke] {
+                stroke: @color-hover;
+            }
+            &.btn-dashed {
+                border-color: @color-hover;
+            }
+        }
+    }
+
+    .content-body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .chat-wrapper {
+        overflow: auto;
+    }
+
+    .arrow-after:after {
+        content: url('/modules/myicons/icons/interface-essential-30.svg');
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    .input-group-append {
+        min-width: 40px;
+        text-align: center;
+
+        .input-group-text {
+            width: 100%;
+        }
+    }
+
+    .modal {
+        &.contain {
+            .modal-dialog {
+                margin-top: 0;
+            }
+
+            .modal-body {
+                overflow-y: auto;
+                scrollbar-width: thin;
+                max-height: calc(~"100vh - 130px");
+            }
+        }
+    }
+
+    code {
+        background: #eee;
+        display: block;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    @import url("./blocks/aside.less");
+
+    &.chat-content-show {
+        aside {
+            @media (max-width: 992px) {
+                .burger-menu {
+                    display: flex !important;
+                }
+
+                .aside-menu-link {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .input-group .input-group-append>.form-control {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    input[type=radio]+label.card {
+        border: 1px @color-gray solid;
+        box-shadow: none;
+    }
+
+
+    input[type=radio]:checked + label.card {
+            box-shadow: 0 0 0px 2px @color-hover;
+            border-color:transparent;
+    }
+
+
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.scrollable {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nobr {
+    white-space: nowrap;
+}

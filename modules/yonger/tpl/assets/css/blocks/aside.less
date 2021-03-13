@@ -1,0 +1,143 @@
+    .aside {
+        width: 250px;
+        transition-duration: .4s;
+
+        .aside-logo {
+            white-space: nowrap;
+            overflow: hidden;
+
+            color: @color-logo;
+/*
+            svg path:not(.d, .c) {
+                fill: @color-logo;
+                stroke: @color-logo;
+            }
+
+            svg path:not(.c) {
+                fill: @color-logo;
+            }
+*/
+        }
+
+
+        .aside-body {
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .aside-menu-link {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        .nav-aside {
+
+            [class^="ri-"],
+            [class*=" ri-"] {
+                font-size: 16px;
+            }
+
+            ul {
+                padding-left: 0px;
+                font-size: 12px;
+
+                li {
+                    list-style: none;
+                    text-align: left;
+                    letter-spacing: 0.1px;
+                    color: @color-menu;
+                    opacity: 1;
+                    font-size: 14px;
+                }
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .nav-item {
+                &.with-sub {
+                    >.nav-link::after {
+                        content: url('/modules/myicons/icons/interface-essential-30.svg');
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    ul .nav-link {
+                        padding: 14px 5px;
+                        font-weight: 400;
+
+                        &:before {
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .nav-link {
+                text-transform: none;
+                font-weight: 500;
+                font-size: .8rem;
+                height: 50px;
+
+                &:hover {
+                    color: @color-hover !important;
+
+                    svg [stroke] {
+                        stroke: @color-hover;
+                    }
+                }
+            }
+        }
+
+        #userProfileMenu {
+            .avatar {
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            &:not(.aside-show) {
+                .aside-logo {
+                    margin-right: 21px;
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            .aside-logo {
+                margin-right: 10px;
+            }
+        }
+
+        .aside-menu-link {
+            display: flex;
+        }
+
+        .burger-menu {
+            display: none;
+        }
+
+        &.minimize {
+            .nav-desc {
+                display: none;
+            }
+            ul {
+                padding-left: 0;
+            }
+
+            #userProfileMenu {
+                .avatar {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+
+        }
+    }
