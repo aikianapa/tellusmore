@@ -1,6 +1,7 @@
 /engine/
 /database/_cache/*
 /uploads/_cache/*
+/ssl
 engine
 *.pid
 *.log
